@@ -1,5 +1,14 @@
 plugins {
     java
+    id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "LR7"
+    property "sonar.organization", "daryarotkina-1"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 group = "radik.prog"
